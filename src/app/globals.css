@@ -108,5 +108,24 @@ body {
     border-radius: 12px;
   }
 
+  .active {
+    background-color: whitesmoke !important;
+    color: black !important;
+    border-radius: 12px;
+  }
 
+
+}
+
+.f600 {
+  font-weight: 700 !important;
+}
+
+nav {
+  transition: all 0.3s ease !important;
+}
+
+.navbarCustom {
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
 }

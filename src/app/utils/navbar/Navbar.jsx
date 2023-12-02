@@ -1,5 +1,4 @@
 import Link from "next/link"
-import style from "./navbar.module.css"
 import { useEffect, useState } from "react";
 
 import { usePathname } from "next/navigation";
@@ -28,20 +27,20 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className={`${style.f600} nav-link active text-dark px-md-3 px-md-3 ${pathname == "/" ? style.active : ""}`} href="/">Home</Link>
+                                <Link className={`f600 nav-link active text-dark px-md-3 px-md-3 ${pathname == "/" ? 'active' : ""}`} href="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`${style.f600} nav-link active text-dark px-md-3 px-md-3 ${pathname == "/about" ? style.active : ""}`} href="/about">About</Link>
+                                <Link className={`f600 nav-link active text-dark px-md-3 px-md-3 ${pathname == "/about" ? 'active' : ""}`} href="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`${style.f600} nav-link text-dark px-md-3 px-md-3`} href="#">Services</Link>
+                                <Link className={`f600 nav-link text-dark px-md-3 px-md-3`} href="#">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`${style.f600} nav-link text-dark px-md-3 px-md-3 ${pathname == "/products" ? style.active : ""}`} href="#">Products</Link>
+                                <Link className={`f600 nav-link text-dark px-md-3 px-md-3 ${pathname == "/products" ? 'active' : ""}`} href="#">Products</Link>
                             </li>
                         </ul>
                         <div>
-                            <Link href="https://wa.me/6282389869057" target="_blank" className={`${style.f600}  btn btn-color rounded-3 border-0 px-4 w-100 `}>+62 823 8986 9057</Link>
+                            <Link href="https://wa.me/6282389869057" target="_blank" className={`f600  btn btn-color rounded-3 border-0 px-4 w-100 `}>+62 823 8986 9057</Link>
                         </div>
                     </div>
                 </div>
